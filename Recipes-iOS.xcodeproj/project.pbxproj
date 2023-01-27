@@ -31,6 +31,12 @@
 		B0B025252981DB39002323D5 /* Recipes_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0B025232981DB39002323D5 /* Recipes_iOS.xcdatamodeld */; };
 		B0B025392981DB3A002323D5 /* Recipes_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B025382981DB3A002323D5 /* Recipes_iOSUITests.swift */; };
 		B0B0253B2981DB3A002323D5 /* Recipes_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B0253A2981DB3A002323D5 /* Recipes_iOSUITestsLaunchTests.swift */; };
+		B0BC79162984799200AE27B2 /* ViewControllerResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BC79142984799200AE27B2 /* ViewControllerResolver.swift */; };
+		B0BC79172984799200AE27B2 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BC79152984799200AE27B2 /* SearchBar.swift */; };
+		B0BC7919298479A600AE27B2 /* ParentResolverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BC7918298479A600AE27B2 /* ParentResolverViewController.swift */; };
+		B0BC791B298479D100AE27B2 /* SearchBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BC791A298479D100AE27B2 /* SearchBarModifier.swift */; };
+		B0BC791D29847A6E00AE27B2 /* View+SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BC791C29847A6E00AE27B2 /* View+SearchBar.swift */; };
+		B0BC791F298482D700AE27B2 /* GetRecipesByProductUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BC791E298482D700AE27B2 /* GetRecipesByProductUseCase.swift */; };
 		B0FDF19B2981EE53004DF74F /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDF19A2981EE53004DF74F /* AppContainer.swift */; };
 		B0FDF1C42982CF19004DF74F /* RecipesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDF1B42982CF19004DF74F /* RecipesListView.swift */; };
 		B0FDF1C52982CF19004DF74F /* RemoteRecipesListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDF1B72982CF19004DF74F /* RemoteRecipesListDataSource.swift */; };
@@ -104,6 +110,12 @@
 		B0B025382981DB3A002323D5 /* Recipes_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes_iOSUITests.swift; sourceTree = "<group>"; };
 		B0B0253A2981DB3A002323D5 /* Recipes_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B0B0258C2981DE18002323D5 /* RecipeListCoreDataDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListCoreDataDataSource.swift; sourceTree = "<group>"; };
+		B0BC79142984799200AE27B2 /* ViewControllerResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerResolver.swift; sourceTree = "<group>"; };
+		B0BC79152984799200AE27B2 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		B0BC7918298479A600AE27B2 /* ParentResolverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentResolverViewController.swift; sourceTree = "<group>"; };
+		B0BC791A298479D100AE27B2 /* SearchBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarModifier.swift; sourceTree = "<group>"; };
+		B0BC791C29847A6E00AE27B2 /* View+SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SearchBar.swift"; sourceTree = "<group>"; };
+		B0BC791E298482D700AE27B2 /* GetRecipesByProductUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRecipesByProductUseCase.swift; sourceTree = "<group>"; };
 		B0FDF19A2981EE53004DF74F /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		B0FDF1B12982CF19004DF74F /* RecipesListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesListViewModelTests.swift; sourceTree = "<group>"; };
 		B0FDF1B22982CF19004DF74F /* GetRecipesListUseCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRecipesListUseCaseTests.swift; sourceTree = "<group>"; };
@@ -312,6 +324,18 @@
 			path = PersistanceManager;
 			sourceTree = "<group>";
 		};
+		B0BC79132984799200AE27B2 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				B0BC791C29847A6E00AE27B2 /* View+SearchBar.swift */,
+				B0BC791A298479D100AE27B2 /* SearchBarModifier.swift */,
+				B0BC79152984799200AE27B2 /* SearchBar.swift */,
+				B0BC79142984799200AE27B2 /* ViewControllerResolver.swift */,
+				B0BC7918298479A600AE27B2 /* ParentResolverViewController.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
 		B0FDF1982981EE30004DF74F /* CompositionRoot */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,6 +425,7 @@
 				B02A03C5298350CE00BDEC20 /* DeleteFavoriteRecipeUseCase.swift */,
 				B0FDF1BF2982CF19004DF74F /* GetRecipesListUseCase.swift */,
 				B0FDF1EC2982EB11004DF74F /* GetFavoritesRecipesUseCase.swift */,
+				B0BC791E298482D700AE27B2 /* GetRecipesByProductUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -477,6 +502,7 @@
 		B0FDF1E02982E01A004DF74F /* CommomUI */ = {
 			isa = PBXGroup;
 			children = (
+				B0BC79132984799200AE27B2 /* SearchBar */,
 				B02A03B62983470C00BDEC20 /* AsyncImage */,
 				B0FDF1E12982E03C004DF74F /* LoadingView */,
 			);
@@ -696,18 +722,21 @@
 				B0FDF1DA2982CF69004DF74F /* APIManager.swift in Sources */,
 				B0FDF1E52982E03C004DF74F /* ActivityIndicator.swift in Sources */,
 				B0FDF2072983007A004DF74F /* PostDetailFactory.swift in Sources */,
+				B0BC791D29847A6E00AE27B2 /* View+SearchBar.swift in Sources */,
 				B0FDF1C62982CF19004DF74F /* RecipesListRepository.swift in Sources */,
 				B0B025222981DB39002323D5 /* Persistence.swift in Sources */,
 				B0FDF1ED2982EB11004DF74F /* GetFavoritesRecipesUseCase.swift in Sources */,
 				B0FDF1E72982E03C004DF74F /* LoadingView.swift in Sources */,
 				B0FDF1E62982E03C004DF74F /* VisualEffectView.swift in Sources */,
 				B0FDF1EF2982EBCF004DF74F /* LocalRecipesListDataSource.swift in Sources */,
+				B0BC7919298479A600AE27B2 /* ParentResolverViewController.swift in Sources */,
 				B0FDF1C92982CF19004DF74F /* GetRecipesListUseCase.swift in Sources */,
 				B0FDF2062983007A004DF74F /* PostDetailInteractor.swift in Sources */,
 				B02A03C6298350CE00BDEC20 /* DeleteAllRecipesUseCase.swift in Sources */,
 				B02A03DC29837D5F00BDEC20 /* UINavigationBarExtensions.swift in Sources */,
 				B02A03BD2983470C00BDEC20 /* AsyncImage.swift in Sources */,
 				B0FDF1CA2982CF19004DF74F /* RecipesListFactory.swift in Sources */,
+				B0BC79162984799200AE27B2 /* ViewControllerResolver.swift in Sources */,
 				B0FDF1E92982E174004DF74F /* BindingExtensions.swift in Sources */,
 				B0FDF1D72982CF69004DF74F /* APIManagerConstants.swift in Sources */,
 				B02A03BC2983470C00BDEC20 /* AsyncImageLoader.swift in Sources */,
@@ -725,8 +754,11 @@
 				B0FDF1C82982CF19004DF74F /* RecipesListViewModel.swift in Sources */,
 				B02A03BB2983470C00BDEC20 /* TemporaryImageCache.swift in Sources */,
 				B0FDF2042983007A004DF74F /* RecipeDetilView.swift in Sources */,
+				B0BC791B298479D100AE27B2 /* SearchBarModifier.swift in Sources */,
+				B0BC79172984799200AE27B2 /* SearchBar.swift in Sources */,
 				B02A03C329834E6900BDEC20 /* RecipeRowView.swift in Sources */,
 				B0FDF1D92982CF69004DF74F /* HTTPMethod.swift in Sources */,
+				B0BC791F298482D700AE27B2 /* GetRecipesByProductUseCase.swift in Sources */,
 				B02A03C9298361D500BDEC20 /* CollectionExtensions.swift in Sources */,
 				B0FDF1C72982CF19004DF74F /* RecipesListModels.swift in Sources */,
 				B0FDF1C52982CF19004DF74F /* RemoteRecipesListDataSource.swift in Sources */,

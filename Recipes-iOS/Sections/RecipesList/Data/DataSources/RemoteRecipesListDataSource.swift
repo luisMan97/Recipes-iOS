@@ -7,4 +7,5 @@
 
 protocol RemoteRecipesListDataSource {
     func doSomething() async throws -> [RecipeViewModel]
+    func getRecipesByProduct(request: RecipesRequest) async throws -> [RecipeViewModel]
 }

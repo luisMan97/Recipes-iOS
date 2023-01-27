@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Request {
-    
+struct RecipesRequest {
+    let product: String
 }
 
 struct RecipesResponse: Decodable {

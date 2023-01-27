@@ -48,6 +48,7 @@ struct RecipesListView: View {
                     
                     Spacer()
                 }
+                .add(viewModel.searchBar)
                 .navigationBarTitle(viewModel.title)
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {

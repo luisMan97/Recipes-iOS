@@ -9,19 +9,24 @@ import Foundation
 
 enum APIRouter {
 
-    case Recipes
+    case DefaultRecipes
+    case Recipes([String: Any])
     
     private var method: HTTPMethod {
         switch self {
-        case .Recipes:
+        case .DefaultRecipes,
+             .Recipes:
             return .GET
         }
     }
 
     private var path: String {
         switch self {
-        case .Recipes:
+        case .DefaultRecipes:
             return "complexSearch?apiKey=6ef88bbedd664620888ff1af91097df8"
+        case .Recipes(let parameters):
+            let product = parameters["product"] ?? ""
+            return "complexSearch?query=\(product)&apiKey=6ef88bbedd664620888ff1af91097df8".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
         }
     }
 
@@ -51,7 +56,8 @@ enum APIRouter {
 
     var request: URLRequest? {
         switch self {
-        case .Recipes:
+        case .DefaultRecipes,
+             .Recipes:
             return nsUrlRequest
         }
     }
