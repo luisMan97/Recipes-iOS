@@ -28,7 +28,10 @@ The project does not use third party libraries. Don't cocoapods, don't cartage, 
 - La aplicación tiene cómo arquitectura un tipo de MVVM extendido (CLEAN Architecture).
 - La aplicación usa programación reactiva con Combine.
 - La aplicación implementa diferentes patrones de diseño (Repository, Factory entre otros).
+- La aplicación hace uso de inyección de dependencias.
+- La aplicación hace uso de los principios SOLID.
 - La aplicación no usa librerías de terceros.
+- La aplicación contiene test unitarios de las casos de uso y viewmodels.
 - La aplicación usa una capa genérica y extensible con URLSession para hacer los llamados a los servicios.  
 - La aplicación usa Codable para el mapeo de JSON a objetos. 
 - La aplicación contiene un .gitignore para no subir archivos innecesarios.
