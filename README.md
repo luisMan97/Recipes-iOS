@@ -13,6 +13,7 @@ The project does not use third party libraries. Don't cocoapods, don't cartage, 
 #### Funcionalidades
 - La pantalla principal cuenta con dos principales secciones; las recetas de la API publica de spoonacular ((https://spoonacular.com/food-api)) y los favoritos persisitos localmente (Favorites).
 - La pantalla principal, sección de "Recetas" tiene un botón para volver a llamar las recetas desde el API.
+- La pantalla principal, tanto la sección de "Recetas" cómo de "Favoritos" cuentan con una barra de busqueda, la sección de "Recetas" busca en el API y la sección de "Favoritos" busca localmente.
 - Las filas de los recetas de la pantalla principal tienen un indicador (estrella) cuando está guardado como favorito.
 - Cuando se selecciona una receta se va al detalle de la receta.
 - La pantalla principal, sección de "Favoritos" tiene un botón para editar las recetas favoritas, más especificamente poderlos eliminar.
