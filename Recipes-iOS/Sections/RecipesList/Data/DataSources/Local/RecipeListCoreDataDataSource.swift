@@ -88,7 +88,6 @@ extension RecipeListCoreDataDataSource: NSFetchedResultsControllerDelegate {
         guard let recipes = controller.fetchedObjects as? [RecipeCoreData] else {
             return
         }
-        print("Context has changed, reloading courses")
         self.recipes.value = recipes
     }
 }

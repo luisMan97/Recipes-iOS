@@ -17,7 +17,7 @@ struct Recipes_iOSApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RecipesListFactory.getRecipesListView(appContainer: AppContainer())
+            SplashView()
         }
     }
 }

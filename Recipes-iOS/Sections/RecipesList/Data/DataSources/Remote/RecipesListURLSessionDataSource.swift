@@ -13,7 +13,7 @@ struct RecipesListURLSessionDataSource: RemoteRecipesListDataSource {
     
     let apiManager: APIManagerProtocol
     
-    func doSomething() async throws -> [RecipeViewModel] {
+    func getRecipes() async throws -> [RecipeViewModel] {
         try await fetchRecipes().toDomain()
     }
 
